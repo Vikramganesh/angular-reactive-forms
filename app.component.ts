@@ -41,7 +41,10 @@ export class AppComponent {
      // console.log(signUpForm.controls);
        // display all data
        console.log(signUpForm.controls.fname.value);
-
-       this.firstname = signUpForm.controls.fname.value
+       this.firstname = signUpForm.controls.fname.value;
+       this.Reset();
+  }
+  Reset(){
+    this.signUpForm.reset();
   }
 }
