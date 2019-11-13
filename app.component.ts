@@ -22,6 +22,20 @@ export class AppComponent {
     });
 
   }
+    <!------------------------OR------------------------->
+  <!--------------------FORM VALIDATING----------------------------->
+  constructor(private frmBuilder: FormBuilder) {
+    this.signUpForm = frmBuilder.group({
+      fname: ['', [Validators.maxLength(6), Validators.required]],
+      email: ['', [Validators.email]],
+      passwd: ['', [Validators.required]]
+    });
+
+  }
+  <!------------------------------------------------->
+  
+  
+  
   PostData(signUpForm) {
       // display all data
      // console.log(signUpForm.controls);
