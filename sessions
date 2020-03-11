@@ -1,0 +1,26 @@
+Managing sessions in angular
+=============================
+Step-1:  create coponents
+
+Step-2: localStorage.setItem(<key:value>)
+	localStorage.setItem('local','datahere')
+
+Step-3: or
+
+	sessionStorage.setItem('local','datahere')
+	
+Step-3: console.log(sessionStorage.getItem('local'))
+
+
+
+// Save data to sessionStorage
+sessionStorage.setItem('key', 'value');
+
+// Get saved data from sessionStorage
+let data = sessionStorage.getItem('key');
+
+// Remove saved data from sessionStorage
+sessionStorage.removeItem('key');
+
+// Remove all saved data from sessionStorage
+sessionStorage.clear();
